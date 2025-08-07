@@ -1,31 +1,48 @@
-**AI Calling Agent - RupeeQ Assignment**
+# AI Calling Agent - RupeeQ Assignment
 
 ## Overview
 An **Agentic AI Solution** for automated customer calling in financial services. This AI agent handles customer interactions for Bajaj Finance's Flexi Overdraft Facility, speaking in English with authentic Indian accent and natural Hindi phrases.
 
-##  Project Objectives
+Built using **LiveKit Agents Framework** - a modern agentic AI platform for creating autonomous, real-time conversational agents that can perceive, reason, and act in dynamic environments.
+
+## 🤖 Agentic AI Architecture
+
+### What Makes This "Agentic AI":
+- **Autonomous Decision Making** - Agent independently decides responses based on conversation context
+- **Goal-Oriented Behavior** - Works toward completing sales objectives (information collection, objection handling)
+- **Multi-Modal Tool Usage** - Integrates and orchestrates multiple AI tools (STT, LLM, TTS)
+- **Real-time Adaptation** - Dynamically adjusts conversation flow based on customer responses
+- **Memory & Context** - Maintains conversation state and customer information throughout interaction
+- **Structured Reasoning** - Follows business logic while adapting to natural conversation patterns
+
+### Agentic AI Framework: 
+**LiveKit Agents Framework** provides the foundation for building production-ready agentic AI systems:
+- **Agent Session Management** - Handles multi-turn conversations with state persistence
+- **Tool Integration** - Seamless orchestration of AI services (OpenAI, ElevenLabs, Deepgram)
+- **Real-time Processing** - Sub-second response times for natural conversation flow
+- **Scalable Architecture** - Cloud-native design for enterprise deployment
+- **Voice Activity Detection** - Intelligent conversation turn management
+- **Error Recovery** - Robust handling of network issues and service interruptions
+
+## 🎯 Project Objectives
 - **Automate customer calling** for financial product sales
 - **Implement conversational AI** with Indian accent and cultural context
 - **Handle objections** and collect customer information systematically
 - **Provide real-time interaction** using advanced AI technologies
 
-## Architecture
+## 🏗️ Agentic AI Architecture
 
-### Multi-Modal AI Agent Pipeline:
+### Multi-Modal Agent Pipeline:
 ```
-Customer Audio → STT (Deepgram) → LLM (OpenAI) → TTS (ElevenLabs) → Customer
-                           ↓
-                 Business Logic & Script Following
+Customer Audio → STT Agent → LLM Agent → TTS Agent → Customer
+                      ↓
+            Agentic Decision Engine
+                      ↓
+         Business Logic & Script Following
 ```
 
-### Core Components:
-- **Speech-to-Text**: Deepgram for accurate voice recognition
-- **Language Model**: OpenAI GPT-4o-mini for intelligent responses
-- **Text-to-Speech**: ElevenLabs for Indian-accented voice synthesis
-- **Voice Activity Detection**: Silero VAD for natural conversation flow
-- **Real-time Communication**: LiveKit for seamless audio streaming
 
-## Features
+## 🚀 Features
 
 ### Conversational AI Capabilities:
 -  **Natural conversation flow** with script adherence
@@ -42,7 +59,7 @@ Customer Audio → STT (Deepgram) → LLM (OpenAI) → TTS (ElevenLabs) → Cust
 -  **Scalable cloud deployment** via LiveKit
 -  **Error handling** and conversation recovery
 
-##  Requirements
+## 📋 Requirements
 
 ### API Keys Required:
 - **OpenAI API Key** (for GPT-4o-mini)
@@ -50,7 +67,7 @@ Customer Audio → STT (Deepgram) → LLM (OpenAI) → TTS (ElevenLabs) → Cust
 - **Deepgram API Key** (for speech recognition)
 - **LiveKit Credentials** (for real-time communication)
 
-##  Installation
+## 🛠️ Installation
 
 ### 1. Clone Repository
 ```bash
@@ -61,7 +78,7 @@ cd calling_agent_3.0
 ### 2. Create Virtual Environment
 ```bash
 python -m venv venv
-
+# Windows:
 venv\Scripts\activate
 ```
 
@@ -69,7 +86,6 @@ venv\Scripts\activate
 ```bash
 pip install -r requirements.txt
 ```
-
 
 ### 4. Environment Configuration
 Create `.env` file:
@@ -82,7 +98,7 @@ LIVEKIT_API_KEY=your_livekit_api_key
 LIVEKIT_API_SECRET=your_livekit_api_secret
 ```
 
-##  Usage
+## 🎮 Usage
 
 ### Console Mode (Development)
 ```bash
@@ -100,7 +116,7 @@ python agent.py dev
 - Connect via LiveKit Playground or custom frontend
 - Scalable for production deployment
 
-##  Project Structure
+## 📁 Project Structure
 ```
 calling_agent_3.0/
 ├── agent.py           # Main AI agent implementation
@@ -111,7 +127,7 @@ calling_agent_3.0/
 └── venv/             # Virtual environment
 ```
 
-##  Conversation Flow
+## 💬 Conversation Flow
 
 ### 1. Opening
 - Greeting with identity confirmation
@@ -135,7 +151,7 @@ calling_agent_3.0/
 - Document requirements explanation
 - Next steps and callback scheduling
 
-##  Business Logic
+## 🎯 Business Logic
 
 ### Product Details:
 - **Flexi Overdraft Facility** (not a personal loan)
@@ -149,7 +165,7 @@ calling_agent_3.0/
 - "Have credit card" → "Lower charges than credit card cash withdrawal"
 - "Need time to think" → "Offer currently available for your profile"
 
-##  Technical Specifications
+## 📊 Technical Specifications
 
 ### Performance:
 - **Response Time**: <2 seconds average
@@ -162,12 +178,12 @@ calling_agent_3.0/
 - **Cloud Deployment**: Ready for production scaling
 - **API Integration**: Modular design for easy integration
 
-##  Demo
+## 🎥 Demo
 - **Video demonstration** included showing real-time conversation
 - **Console interaction** showcasing natural dialogue flow
 - **Voice quality** demonstrating Indian accent authenticity
 
-## Business Impact
+## 👨‍💼 Business Impact
 - **Automates repetitive calling tasks** for sales teams
 - **Ensures consistent messaging** and script adherence
 - **Scales customer outreach** without human resource constraints
@@ -176,23 +192,30 @@ calling_agent_3.0/
 
 ## 🔧 Technical Stack
 - **Python 3.8+** - Core programming language
-- **LiveKit** - Real-time communication platform
-- **OpenAI GPT-4o-mini** - Conversational AI engine
-- **ElevenLabs** - Premium voice synthesis
-- **Deepgram** - Advanced speech recognition
-- **Silero VAD** - Voice activity detection
+- **LiveKit Agents Framework** - Agentic AI orchestration platform
+- **OpenAI GPT-4o-mini** - Large Language Model for reasoning and response generation
+- **ElevenLabs API** - Premium voice synthesis with Indian accent capabilities
+- **Deepgram Nova-2** - Advanced speech recognition with real-time processing
+- **Silero VAD** - Voice activity detection for natural conversation flow
 
-##  Assignment Compliance
+### Agentic AI Technologies:
+- **Multi-Agent Architecture** - Specialized agents for different conversation tasks
+- **Tool Integration Framework** - Seamless AI service orchestration
+- **Context Management** - Persistent conversation state and memory
+- **Real-time Decision Making** - Sub-second response generation
+- **Adaptive Behavior** - Dynamic conversation flow adjustment
+
+## 📝 Assignment Compliance
 -  **Real-time AI agent interaction** as required
 -  **Indian accent implementation** per specifications
 -  **Complete codebase** with documentation
 -  **Script adherence** for Bajaj Finance Overdraft calls
 -  **Professional conversation flow** with objection handling
 
-##  Contact
-**Developer**: Shivank Devliyal 
+## 🤝 Contact
+**Developer**: Shivank  
 **Assignment**: RupeeQ AI Calling Agent Role  
 
 
 ---
-*This is an agentic AI solution demonstrating advanced conversational AI capabilities for financial services automation.*
+*This is an advanced agentic AI solution built on LiveKit Agents Framework, demonstrating autonomous conversational AI capabilities for financial services automation.*
