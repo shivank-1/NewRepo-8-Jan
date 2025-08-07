@@ -63,12 +63,13 @@ cd calling_agent_3.0
 python -m venv venv
 
 venv\Scripts\activate
-
+```
 
 ### 3. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
+
 
 ### 4. Environment Configuration
 Create `.env` file:
